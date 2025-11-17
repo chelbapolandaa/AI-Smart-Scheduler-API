@@ -2,10 +2,11 @@
 <div align="center">
 *API Jadwal Cerdas dengan Kecerdasan Buatan • Optimasi Produktivitas • RESTful Service*
 
-https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white
-https://img.shields.io/badge/FastAPI-0.104+-009688?logo=fastapi&logoColor=white
-https://img.shields.io/badge/NLP-Indonesian-blue
-https://img.shields.io/badge/License-MIT-yellow
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io)
+[![Accuracy](https://img.shields.io/badge/Accuracy-96%25-brightgreen)](https://github.com/chelbapolandaa/Smart-CS-AI)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 AI Smart Scheduler API - RESTful API untuk perencanaan jadwal otomatis yang memahami bahasa natural Indonesia.
 
