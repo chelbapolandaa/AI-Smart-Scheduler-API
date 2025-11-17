@@ -15,14 +15,61 @@ AI Smart Scheduler API - RESTful API untuk perencanaan jadwal otomatis yang mema
 ## Tentang Proyek
 AI Smart Scheduler API adalah layanan RESTful berbasis FastAPI yang mengubah deskripsi aktivitas dalam bahasa Indonesia menjadi jadwal terstruktur dengan optimasi produktivitas.
 
-### Keunggulan Utama
-| Fitur | Deskripsi |
-|-------|-----------|
-| **RESTful API** |	Endpoint yang mudah diintegrasikan |
-| **NLP Indonesia** | Pahami instruksi bahasa natural |
-| **Smart Scheduling** | Algoritma penjadwalan cerdas |
-| **Analytics** | Metric produktivitas otomatis |
-| **ValidationInput** | validation dengan Pydantic |
+## Keunggulan Utama
+### 1. NLP Task Parsing
+Masukkan input bebas seperti:
+> besok urgent presentasi 2 jam, rapat team 1 jam, coding 2 jam
+
+Sistem otomatis:
+- memecah aktivitas
+- mendeteksi durasi
+- memberi prioritas (High/Medium/Low)
+- menyusun jadwal harian
+
+---
+
+### 2. Mode Prioritas Tugas
+Tiap task diberi prioritas:
+- **High**
+- **Medium**
+- **Low**
+
+Sistem mampu:
+- Menggeser jadwal otomatis
+- Menyelesaikan konflik jadwal
+- Menempatkan aktivitas paling penting terlebih dahulu
+
+---
+
+### 3. Auto Time-Blocking (Greedy Algorithm)
+Contoh input:
+> Aku mau belajar AI 2 jam, olahraga 1 jam.
+
+Output otomatis:
+- 08:00 – 10:00 → belajar AI  
+- 10:00 – 11:00 → olahraga
+
+---
+
+### 4. Embedding Cache Lokal
+- Parsing bahasa alami jadi lebih cepat  
+- Tidak memanggil model berulang-ulang
+
+---
+
+### 5. UI Mini (Streamlit / React)
+Terdapat 3 input utama:
+- Aktivitas
+- Jam tersedia
+- Preferensi (urgensi, durasi, fokus)
+
+Output:
+- Jadwal rapi
+- Context panel
+- Analytics produktivitas  
+  (jam produktif, efisiensi, skor prioritas)
+
+---
 
 ## Quick Demo
 ```
